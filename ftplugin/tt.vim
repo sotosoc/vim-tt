@@ -12,3 +12,5 @@ setlocal suffixesadd+=.txt
 nnoremap gf :e      $MERE/notes/<cfile>.txt<CR>
 nnoremap gF :vsp    $MERE/notes/<cfile>.txt<CR>
 nnoremap g, :tabnew $MERE/notes/<cfile>.txt<CR>
+
+nnoremap ,, $rY

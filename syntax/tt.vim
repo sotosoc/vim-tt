@@ -34,11 +34,11 @@ syntax match ttHeader /\v^.*, H$/
 highlight link ttHeader StatusLine
 
 " DONE --- YES
-syntax match ttYes /\v^\d+ , \zs<..._\d{3}_\d{3}>\ze ,.*, Y$/
+syntax match ttYes /\v^\d+ , \zs<..._\d{3}_\d{3}> ,.*, Y$/
 highlight link ttYes Function
 
 " DONE --- NO
-syntax match ttNo /\v^\d+ , \zs<..._\d{3}_\d{3}>\ze ,.*, N$/
+syntax match ttNo /\v^\d+ , \zs<..._\d{3}_\d{3}> ,.*, N$/
 highlight link ttNo String
 
 let b:current_syntax = "tt"

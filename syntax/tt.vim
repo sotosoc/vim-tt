@@ -41,4 +41,8 @@ highlight link ttYes Function
 syntax match ttNo /\v^\d+ , <..._\d{3}_\d{3}> ,.*, N$/
 highlight link ttNo String
 
+" ERROR --- 000000
+syntax match ttError /\v<000000>/
+highlight link ttNo Error
+
 let b:current_syntax = "tt"

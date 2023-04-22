@@ -21,9 +21,6 @@ highlight link ttNotes Todo
 syntax match ttHashTag /\v#([A-Za-z]+)+/
 highlight link ttHashTag Define
 
-syntax keyword ttError 000000 contained
-highlight link ttError Error
-
 "-------------------------------------------------------------------------------
 " Comments start with a pound sign (possibly after spaces)
 "-------------------------------------------------------------------------------
@@ -37,11 +34,11 @@ syntax match ttHeader /\v^.*, H$/
 highlight link ttHeader StatusLine
 
 " DONE --- YES
-syntax match ttYes /\v^\d+ , <..._\d{3}_\d{3}> ,.*, Y$/ contains=ttError
+syntax match ttYes /\v^\d+ , <..._\d{3}_\d{3}> ,.*, Y$/
 highlight link ttYes Function
 
 " DONE --- NO
-syntax match ttNo /\v^\d+ , <..._\d{3}_\d{3}> ,.*, N$/ contains=ttError
+syntax match ttNo /\v^\d+ , <..._\d{3}_\d{3}> ,.*, N$/
 highlight link ttNo String
 
 let b:current_syntax = "tt"

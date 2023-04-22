@@ -21,7 +21,7 @@ highlight link ttNotes Todo
 syntax match ttHashTag /\v#([A-Za-z]+)+/
 highlight link ttHashTag Define
 
-syntax match ttError /\v<000000>/
+syntax match ttError /\v<000000>/ contained
 highlight link ttError Error
 
 "-------------------------------------------------------------------------------

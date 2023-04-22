@@ -33,12 +33,15 @@ highlight link ttComment Comment
 syntax match ttHeader /\v^.*, H$/
 highlight link ttHeader StatusLine
 
+syntax match ttError /\v<000000>/ contained
+highlight link ttError Error
+
 " DONE --- YES
-syntax match ttYes /\v^\d+ , <..._\d{3}_\d{3}> ,.*, Y$/
+syntax match ttYes /\v^\d+ , <\d{6}> , <..._\d{3}_\d{3}> ,.*, Y$/ contains=ttError
 highlight link ttYes Function
 
 " DONE --- NO
-syntax match ttNo /\v^\d+ , <..._\d{3}_\d{3}> ,.*, N$/
+syntax match ttNo /\v^\d+ , <\d{6}> , <..._\d{3}_\d{3}> ,.*, N$/ contains=ttError
 highlight link ttNo String
 
 let b:current_syntax = "tt"

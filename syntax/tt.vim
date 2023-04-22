@@ -43,6 +43,6 @@ highlight link ttNo String
 
 " ERROR --- 000000
 syntax match ttError /\v<000000>/
-highlight link ttNo Error
+highlight link ttError Error
 
 let b:current_syntax = "tt"

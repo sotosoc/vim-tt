@@ -37,11 +37,11 @@ syntax match ttError /\v<000000>/ contained
 highlight link ttError Error
 
 " DONE --- YES
-syntax match ttYes /\v^\d+ , <\d{6}> , <..._\d{3}_\d{3}> ,.*, Y$/ contains=ttError
+syntax match ttYes /\v^\d+.*, Y$/ contains=ttError
 highlight link ttYes Function
 
 " DONE --- NO
-syntax match ttNo /\v^\d+ , <\d{6}> , <..._\d{3}_\d{3}> ,.*, N$/ contains=ttError
+syntax match ttNo  /\v^\d+.*, N$/ contains=ttError
 highlight link ttNo String
 
 let b:current_syntax = "tt"

@@ -13,6 +13,6 @@ nnoremap gf :e      $MERE/notes/<cfile>.txt<CR>
 nnoremap gF :vsp    $MERE/notes/<cfile>.txt<CR>:vert resize -20<CR>
 nnoremap g, :tabnew $MERE/notes/<cfile>.txt<CR>
 
-nnoremap ,, $rY
+nnoremap <leader>y $rY
 
 match Error /\v<000000>/
